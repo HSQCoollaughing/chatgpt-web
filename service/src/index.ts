@@ -25,7 +25,7 @@ router.post('/chat-process', [auth, limiter], async (req, res) => {
   try {
     const { ip } =  req
     const { prompt, options = {}, systemMessage, temperature, top_p } = req.body as RequestProps
-    console.log(prompt,'==关键词===>');
+    console.log(prompt,'==关键词===>', '===>IP ADDR======>' + ip);
     // console.log(systemMessage,'=====>');
     console.log(ip,'==IP===>');
     
